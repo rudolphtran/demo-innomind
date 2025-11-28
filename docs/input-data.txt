@@ -1,0 +1,150 @@
+Project này là một website tĩnh chứa nội dung khóa học python và thuật toán có tên code up your brain
+Toàn bộ nội dung được viết song ngữ. Có nút chuyển đổi giữa tiếng Anh và tiếng Việt. Mặc định là tiếng Anh.
+Màu chủ đạo là màu #FF0000
+Phần header sử dụng logo có sẵn trong file images/logo.png
+Thanh điều hướng có các mục sau:
++ Trang chủ
++ Giới thiệu khóa học
++ Giáo viên
++ Liên hệ
++ nút chuyển đổi ngôn ngữ
+Phần footer có chứa thông tin liên hệ email: contact@codeupyourbrain.com, facebook: https://www.facebook.com/codeupyourbrain, sdt: +84 123 456 789
+Nền website sử dụng màu #FFFFFF
+Không hỗ trợ dark mode, khi người dùng chọn chế độ dark mode của trình duyệt thì vẫn giữ nguyên giao diện sáng
+Trang web này tối ưu cho cả mobile và tablet
+Phông chữ sử dụng là phông chữ Arial, sans-serif
+
+
+Cấu trúc gồm trang chủ chứa thông tin khóa học, giới thiệu về thầy Trí: 
+Sử dụng hình ảnh thầy Trí có sẵn trong file tri.jpg
++ Thầy Trí tốt nghiệp loại giỏi đại học bách khoa thành phố hồ chí minh chuyên ngành khoa học máy tính
++ Trong thời sinh viên, thầy đã xuất bản một bài báo khoa học về thị giác máy tính tại hội nghị AUN/SEED 2018
++ Thầy Trí có hơn 8 năm kinh nghiệm trong tối ưu và phát triển phần mềm
++ Thầy hiện đang là Senior Technical Leader tại Zalo. Thầy và đội ngũ đang phát triển mảng nhắn tin của ứng dụng Zalo trên máy tính với hơn 25 triệu người dùng
++ Thầy tốt nghiệp khóa Leadership Program tại Fulbright university vietnam
+
++ Hiện tại thầy đang học về kinh doanh và khởi nghiệp tại YUP Education, học thêm về tâm lý học và phát triển bản thân
++ Năm 2025 thầy Trí và thầy Lâm Anh Khoa sáng lập học viện InnoMind với tầm nhìn: InnoMind là học viện chuẩn quốc tế đào tạo Toán Quốc Tế, Tiếng Anh, Lập trình & AI hàng đầu tại Đà Nẵng
+
+Tiếp theo là giới thiệu khóa học:
+Khóa học cung cấp những kiến thức sau:
+1. Introduction:
+Tìm hiểu khái niệm cơ bản về lập trình. Giới thiệu cấu trúc một chương trình cơ bản, các kiểu dữ liệu và các phép toán số học, luận lý. Làm quen với hệ thống máy chấm bài.
+
+Viết một chương trình cơ bản:
+
+Nhập xuất dữ liệu từ màn hình.
+Thực hiện một số phép toán số học cơ bản.
+
+2. Conditional Statements:
+Giới thiệu cấu trúc điều kiện, rẽ nhánh: khái niệm và các lưu ý.
+
+Giải quyết các bài toán thực tế:
+
+Kiểm tra 1 năm có phải là năm nhuận hay không.
+Tính tiền điện hàng tháng theo mức sử dụng.
+
+3. Loops:
+Giới thiệu cấu trúc vòng lặp: khái niệm, phân loại và các kỹ thuật xử lí với vòng lặp.
+
+Giải quyết các bài toán thực tế:
+
+Tính số gạch cần để lát sàn nhà.
+Tính sức chứa của một chuyến tàu điện.
+
+4. Functions:
+Tìm hiểu về chương trình con: Khái niệm, cấu trúc, công dụng.
+
+Giới thiệu về biến cục bộ, biến toàn cục.
+
+Giới thiệu về cách chia file chương trình.
+
+Cài đặt 1 số hàm cơ bản thường hay dùng:
+
+Kiểm tra số nguyên tố.
+Tìm ước chung lớn nhất của 2 số nguyên.
+
+5. Arrays:
+Tìm hiểu về kiểu dữ liệu mảng, mảng 1 chiều: khái niệm, cách truy xuất phần tử, các kỹ thuật xử lí trên mảng 1 chiều.
+
+Giới thiệu phương pháp kiểm tra lỗi sai chương trình, tìm lỗi nhanh
+
+Giới thiệu các phương pháp tính toán và tiếp cận nhanh bài toán
+
+Giải quyết 1 số bài toán thực tế:
+
+Giải quyết bài toán mua hàng trái cây trong siêu thị.
+Quản lí mã số của các nhân viên trong công ty.
+Kiểm tra bài post nào có nhiều lượt like nhất.
+
+6. Matrix - 2D Arrays:
+Tìm hiểu về mảng 2 chiều và nhiều chiều: khái niệm, cách truy xuất phần tử mảng, các kĩ thuật xử lí trên mảng 2 chiều
+
+Giải quyết 1 số bài toán thực tế:
+
+Chơi cờ vua.
+Đếm số lượt like của 1 album ảnh trên mạng xã hội.
+
+7. String:
+Tìm hiểu về chuỗi và kiểu kí tự: khái niệm, kĩ thuật lập trình với chuỗi kí tự.
+
+Giới thiệu về bảng mã ASCII.
+
+Các bài tập ứng dụng:
+
+Chuẩn hóa tên.
+Đếm các kí tự phân biệt.
+
+8. Recursion:
+Tìm hiểu về Kỹ thuật lập trình đệ quy cơ bản: Khái niệm và phân loại, các kỹ thuật đệ quy.
+
+Giới thiệu cơ bản về cấu trúc dữ liệu nâng cao Stack.
+
+Giải quyết các bài toán kinh điển bằng đệ quy:
+
+Tìm số Fibonnaci.
+Ứng dụng chuyển đổi giữa nhị phân và thập phân.
+
+9. Data abstraction:
+Tìm hiểu về struct/class: Áp dụng struct/class để tạo ra kiểu dữ liệu mới giúp tránh nhầm lẫn và dễ quản lí chương trình.
+
+Giới thiệu về getters and setters trong việc truy xuất và can thiệp vào các thuộc tính trong struct/class.
+
+Giải quyết các bài toán thực tế:
+
+Tìm kiếm và lưu trữ thông tin học sinh/nhân viên.
+Tìm điểm xa nhất trong hệ trục tọa độ hai chiều (2D).
+
+10. Sorting algorithms:
+
+Tìm hiểu về các Thuật Toán sắp xếp kinh điển.
+
+Giới thiệu sơ nét và làm quen với độ phức tạp Thuật Toán.
+
+Giải quyết vấn đề thực tiễn:
+
+Sắp xếp mã số và điểm số của một danh sách các sinh viên.
+Tìm giải pháp giúp Vasya xây dựng tháp.
+
+11. Singly Linked List:
+Giới thiệu về danh sách liên kết, lưu trữ danh sách kết đơn FIFO và LIFO, các thao tác cơ bản trên danh sách liên kết đơn.
+
+Pointer con trỏ: Bài học thêm cho ngôn ngữ C++.
+
+Giải quyết các bài toán về danh sách liên kết đơn:
+
+Tìm phòng trống của khách sạn dựa trên thông tin cho trước.
+Tìm danh sách liên kết theo chiều ngược lại (reversed linked list).
+
+12. Trees:
+Giới thiệu về cấu trúc dữ liệu phân cấp cây (Tree) trong lập trình: Định nghĩa, phân loại và các khái niệm cơ bản liên quan đến Tree.
+
+Tìm hiểu về cấu trúc dữ liệu Binary Tree (cây nhị phân), đặc biệt là Binary Search Tree (cây tìm kiếm nhị phân): các thao tác và phép duyệt trên cây tìm kiếm nhị phân.
+
+Giải quyết các bài toán về cây:
+
+Tìm sinh viên với số điểm cao nhất.
+Hình tượng hóa cây nhị phân theo hướng nhìn từ trên xuống.
+Phép duyệt cây nhị phân theo cấp (level order traversal).
+
+Ngoài ra còn có lồng ghép thêm nhiều bài học về AI như: xây dựng chatbot, AI đánh cờ.

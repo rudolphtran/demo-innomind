@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Teacher Tri - Code Up Your Brain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Code Up Your Brain Logo">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-vi="Trang chủ">Home</a></li>
+                    <li><a href="course.html" class="nav-link" data-en="Course Introduction" data-vi="Giới thiệu khóa học">Course Introduction</a></li>
+                    <li><a href="teacher.html" class="nav-link active" data-en="Teacher" data-vi="Giáo viên">Teacher</a></li>
+                    <li><a href="contact.html" class="nav-link" data-en="Contact" data-vi="Liên hệ">Contact</a></li>
+                    <li>
+                        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                            <span class="lang-icon">🌐</span>
+                            <span id="currentLang">EN</span>
+                        </button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Meet Your Teacher" data-vi="Gặp gỡ giáo viên">Meet Your Teacher</h1>
+            <p data-en="Learn from an experienced software engineer and passionate educator" data-vi="Học từ một kỹ sư phần mềm giàu kinh nghiệm và nhà giáo dục đam mê">Learn from an experienced software engineer and passionate educator</p>
+        </div>
+    </section>
+
+    <!-- Teacher Profile -->
+    <section class="teacher-profile">
+        <div class="container">
+            <div class="profile-main">
+                <div class="profile-image">
+                    <img src="images/tri.jpg" alt="Teacher Tri" onerror="this.src='images/placeholder-teacher.jpg'">
+                </div>
+                <div class="profile-info">
+                    <h2 data-en="Mr. Tri" data-vi="Thầy Trí">Mr. Tri</h2>
+                    <p class="profile-title" data-en="Senior Technical Leader at Zalo" data-vi="Senior Technical Leader tại Zalo">Senior Technical Leader at Zalo</p>
+                    <p class="profile-subtitle" data-en="Co-Founder of InnoMind Academy" data-vi="Đồng sáng lập Học viện InnoMind">Co-Founder of InnoMind Academy</p>
+                    <p class="profile-intro" data-en="With over 8 years of experience in software development and a deep passion for teaching, Mr. Tri combines technical expertise with educational innovation to inspire the next generation of programmers." data-vi="Với hơn 8 năm kinh nghiệm trong phát triển phần mềm và niềm đam mê sâu sắc với giảng dạy, thầy Trí kết hợp chuyên môn kỹ thuật với đổi mới giáo dục để truyền cảm hứng cho thế hệ lập trình viên tiếp theo.">
+                        With over 8 years of experience in software development and a deep passion for teaching, Mr. Tri combines technical expertise with educational innovation to inspire the next generation of programmers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section class="credentials">
+        <div class="container">
+            <h2 class="section-title" data-en="Education & Professional Journey" data-vi="Học vấn & Hành trình nghề nghiệp">Education & Professional Journey</h2>
+            
+            <div class="timeline">
+                <!-- Education -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎓</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Bachelor's Degree in Computer Science (Honors)" data-vi="Cử nhân Khoa học Máy tính (Loại Giỏi)">Bachelor's Degree in Computer Science (Honors)</h3>
+                        <p class="timeline-subtitle" data-en="Ho Chi Minh City University of Technology" data-vi="Đại học Bách Khoa TP. Hồ Chí Minh">Ho Chi Minh City University of Technology</p>
+                        <p data-en="Graduated with honors with a strong foundation in computer science, algorithms, and software engineering principles." data-vi="Tốt nghiệp loại giỏi với nền tảng vững chắc về khoa học máy tính, thuật toán và các nguyên lý kỹ thuật phần mềm.">
+                            Graduated with honors with a strong foundation in computer science, algorithms, and software engineering principles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Research -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">📚</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Published Research Paper" data-vi="Xuất bản bài báo khoa học">Published Research Paper</h3>
+                        <p class="timeline-subtitle" data-en="AUN/SEED Conference 2018" data-vi="Hội nghị AUN/SEED 2018">AUN/SEED Conference 2018</p>
+                        <p data-en="During university, published a research paper on Computer Vision at the prestigious AUN/SEED 2018 conference, demonstrating early commitment to innovation and research." data-vi="Trong thời sinh viên, xuất bản một bài báo khoa học về thị giác máy tính tại hội nghị uy tín AUN/SEED 2018, thể hiện cam kết sớm với đổi mới và nghiên cứu.">
+                            During university, published a research paper on Computer Vision at the prestigious AUN/SEED 2018 conference, demonstrating early commitment to innovation and research.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Professional Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">💼</div>
+                    <div class="timeline-content">
+                        <h3 data-en="8+ Years in Software Development & Optimization" data-vi="8+ năm trong Phát triển & Tối ưu Phần mềm">8+ Years in Software Development & Optimization</h3>
+                        <p class="timeline-subtitle" data-en="Various Leading Tech Companies" data-vi="Các công ty công nghệ hàng đầu">Various Leading Tech Companies</p>
+                        <p data-en="Extensive experience in software development, optimization, and team leadership across multiple projects and technologies." data-vi="Kinh nghiệm sâu rộng trong phát triển phần mềm, tối ưu hóa và lãnh đạo nhóm qua nhiều dự án và công nghệ.">
+                            Extensive experience in software development, optimization, and team leadership across multiple projects and technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zalo -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🚀</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Senior Technical Leader at Zalo" data-vi="Senior Technical Leader tại Zalo">Senior Technical Leader at Zalo</h3>
+                        <p class="timeline-subtitle" data-en="Leading Messaging Platform Development" data-vi="Dẫn dắt phát triển nền tảng nhắn tin">Leading Messaging Platform Development</p>
+                        <p data-en="Currently leading the development team for Zalo's desktop messaging application, serving over 25 million users. Responsible for architecture, optimization, and team management." data-vi="Hiện đang dẫn dắt đội phát triển ứng dụng nhắn tin Zalo trên máy tính, phục vụ hơn 25 triệu người dùng. Chịu trách nhiệm về kiến trúc, tối ưu hóa và quản lý nhóm.">
+                            Currently leading the development team for Zalo's desktop messaging application, serving over 25 million users. Responsible for architecture, optimization, and team management.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎖️</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Leadership Program Graduate" data-vi="Tốt nghiệp Chương trình Lãnh đạo">Leadership Program Graduate</h3>
+                        <p class="timeline-subtitle" data-en="Fulbright University Vietnam" data-vi="Đại học Fulbright Việt Nam">Fulbright University Vietnam</p>
+                        <p data-en="Completed intensive leadership training program, developing skills in team management, strategic thinking, and organizational leadership." data-vi="Hoàn thành chương trình đào tạo lãnh đạo chuyên sâu, phát triển kỹ năng quản lý nhóm, tư duy chiến lược và lãnh đạo tổ chức.">
+                            Completed intensive leadership training program, developing skills in team management, strategic thinking, and organizational leadership.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Continuous Learning -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">📖</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Continuous Learning & Personal Development" data-vi="Học tập liên tục & Phát triển bản thân">Continuous Learning & Personal Development</h3>
+                        <p class="timeline-subtitle" data-en="YUP Education & Self-Study" data-vi="YUP Education & Tự học">YUP Education & Self-Study</p>
+                        <p data-en="Currently studying business and entrepreneurship at YUP Education, while also pursuing knowledge in psychology and personal development to better understand and support students." data-vi="Hiện đang học về kinh doanh và khởi nghiệp tại YUP Education, đồng thời theo đuổi kiến thức về tâm lý học và phát triển bản thân để hiểu và hỗ trợ học sinh tốt hơn.">
+                            Currently studying business and entrepreneurship at YUP Education, while also pursuing knowledge in psychology and personal development to better understand and support students.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- InnoMind -->
+                <div class="timeline-item highlight">
+                    <div class="timeline-icon">🏆</div>
+                    <div class="timeline-content">
+                        <h3 data-en="Co-Founder of InnoMind Academy (2025)" data-vi="Đồng sáng lập Học viện InnoMind (2025)">Co-Founder of InnoMind Academy (2025)</h3>
+                        <p class="timeline-subtitle" data-en="Vision: International Standard Education in Da Nang" data-vi="Tầm nhìn: Giáo dục chuẩn quốc tế tại Đà Nẵng">Vision: International Standard Education in Da Nang</p>
+                        <p data-en="Together with Mr. Lam Anh Khoa, founded InnoMind Academy with the vision of becoming the leading international-standard institution for International Math, English, Programming & AI education in Da Nang." data-vi="Cùng với thầy Lâm Anh Khoa, sáng lập Học viện InnoMind với tầm nhìn trở thành học viện chuẩn quốc tế đào tạo Toán Quốc Tế, Tiếng Anh, Lập trình & AI hàng đầu tại Đà Nẵng.">
+                            Together with Mr. Lam Anh Khoa, founded InnoMind Academy with the vision of becoming the leading international-standard institution for International Math, English, Programming & AI education in Da Nang.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section class="expertise">
+        <div class="container">
+            <h2 class="section-title" data-en="Areas of Expertise" data-vi="Lĩnh vực chuyên môn">Areas of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">💻</div>
+                    <h3 data-en="Software Engineering" data-vi="Kỹ thuật phần mềm">Software Engineering</h3>
+                    <p data-en="Expert in software architecture, optimization, and large-scale system development" data-vi="Chuyên gia về kiến trúc phần mềm, tối ưu hóa và phát triển hệ thống quy mô lớn">Expert in software architecture, optimization, and large-scale system development</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🎓</div>
+                    <h3 data-en="Teaching & Mentoring" data-vi="Giảng dạy & Hướng dẫn">Teaching & Mentoring</h3>
+                    <p data-en="Passionate about making complex concepts accessible to young learners" data-vi="Đam mê làm cho các khái niệm phức tạp dễ tiếp cận với học viên trẻ">Passionate about making complex concepts accessible to young learners</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🧠</div>
+                    <h3 data-en="Computer Vision & AI" data-vi="Thị giác máy tính & AI">Computer Vision & AI</h3>
+                    <p data-en="Research experience in computer vision with practical AI applications" data-vi="Kinh nghiệm nghiên cứu về thị giác máy tính với ứng dụng AI thực tế">Research experience in computer vision with practical AI applications</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">👥</div>
+                    <h3 data-en="Leadership & Management" data-vi="Lãnh đạo & Quản lý">Leadership & Management</h3>
+                    <p data-en="Proven track record leading technical teams on mission-critical projects" data-vi="Thành tích đã được chứng minh trong việc dẫn dắt các nhóm kỹ thuật trong các dự án quan trọng">Proven track record leading technical teams on mission-critical projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Philosophy -->
+    <section class="philosophy">
+        <div class="container">
+            <h2 class="section-title" data-en="Teaching Philosophy" data-vi="Triết lý giảng dạy">Teaching Philosophy</h2>
+            <div class="philosophy-content">
+                <blockquote>
+                    <p data-en="&quot;I believe every child has the potential to become a great programmer. My goal is not just to teach coding, but to help students develop problem-solving skills, logical thinking, and the confidence to tackle any challenge. Through practical projects and real-world applications, I aim to make programming fun, engaging, and meaningful for young learners.&quot;" data-vi="&quot;Tôi tin rằng mỗi đứa trẻ đều có tiềm năng trở thành một lập trình viên xuất sắc. Mục tiêu của tôi không chỉ là dạy code, mà là giúp học sinh phát triển kỹ năng giải quyết vấn đề, tư duy logic và sự tự tin để đối mặt với mọi thử thách. Thông qua các dự án thực tế và ứng dụng trong cuộc sống, tôi hướng đến việc làm cho lập trình trở nên thú vị, hấp dẫn và có ý nghĩa đối với học viên trẻ.&quot;">
+                        "I believe every child has the potential to become a great programmer. My goal is not just to teach coding, but to help students develop problem-solving skills, logical thinking, and the confidence to tackle any challenge. Through practical projects and real-world applications, I aim to make programming fun, engaging, and meaningful for young learners."
+                    </p>
+                    <cite data-en="- Mr. Tri" data-vi="- Thầy Trí">- Mr. Tri</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-en="Ready to Learn with Mr. Tri?" data-vi="Sẵn sàng học với thầy Trí?">Ready to Learn with Mr. Tri?</h2>
+            <p data-en="Join Code Up Your Brain and start your programming journey today" data-vi="Tham gia Code Up Your Brain và bắt đầu hành trình lập trình của bạn ngay hôm nay">Join Code Up Your Brain and start your programming journey today</p>
+            <a href="contact.html" class="btn btn-primary" data-en="Get Started" data-vi="Bắt đầu">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Code Up Your Brain" data-vi="Code Up Your Brain">Code Up Your Brain</h4>
+                    <p data-en="Empowering young minds with programming and AI skills" data-vi="Trao quyền cho trẻ em với kỹ năng lập trình và AI">Empowering young minds with programming and AI skills</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-vi="Liên kết nhanh">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-vi="Trang chủ">Home</a></li>
+                        <li><a href="course.html" data-en="Course" data-vi="Khóa học">Course</a></li>
+                        <li><a href="teacher.html" data-en="Teacher" data-vi="Giáo viên">Teacher</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-vi="Liên hệ">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-vi="Liên hệ">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📧 <a href="mailto:contact@codeupyourbrain.com">contact@codeupyourbrain.com</a></li>
+                        <li>📱 <a href="tel:+84123456789">+84 123 456 789</a></li>
+                        <li>👥 <a href="https://www.facebook.com/codeupyourbrain" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Code Up Your Brain - InnoMind Academy. <span data-en="All rights reserved." data-vi="Bản quyền thuộc về.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

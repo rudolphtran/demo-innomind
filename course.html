@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Introduction - Code Up Your Brain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Code Up Your Brain Logo">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-vi="Trang chủ">Home</a></li>
+                    <li><a href="course.html" class="nav-link active" data-en="Course Introduction" data-vi="Giới thiệu khóa học">Course Introduction</a></li>
+                    <li><a href="teacher.html" class="nav-link" data-en="Teacher" data-vi="Giáo viên">Teacher</a></li>
+                    <li><a href="contact.html" class="nav-link" data-en="Contact" data-vi="Liên hệ">Contact</a></li>
+                    <li>
+                        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                            <span class="lang-icon">🌐</span>
+                            <span id="currentLang">EN</span>
+                        </button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Course Curriculum" data-vi="Chương trình khóa học">Course Curriculum</h1>
+            <p data-en="A comprehensive journey through Python programming, algorithms, and AI" data-vi="Hành trình toàn diện qua lập trình Python, thuật toán và AI">A comprehensive journey through Python programming, algorithms, and AI</p>
+        </div>
+    </section>
+
+    <!-- Course Modules -->
+    <section class="course-modules">
+        <div class="container">
+            <!-- Module 1 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">01</div>
+                    <h2 data-en="Introduction" data-vi="Giới thiệu">Introduction</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn the basic concepts of programming. Introduction to basic program structure, data types, and arithmetic and logical operations. Get familiar with the online judge system." data-vi="Tìm hiểu khái niệm cơ bản về lập trình. Giới thiệu cấu trúc một chương trình cơ bản, các kiểu dữ liệu và các phép toán số học, luận lý. Làm quen với hệ thống máy chấm bài.">
+                        Learn the basic concepts of programming. Introduction to basic program structure, data types, and arithmetic and logical operations. Get familiar with the online judge system.
+                    </p>
+                    <h4 data-en="Practical Projects:" data-vi="Dự án thực hành:">Practical Projects:</h4>
+                    <ul>
+                        <li data-en="Write a basic program with input/output from the screen" data-vi="Viết một chương trình cơ bản với nhập xuất dữ liệu từ màn hình">Write a basic program with input/output from the screen</li>
+                        <li data-en="Perform basic arithmetic operations" data-vi="Thực hiện một số phép toán số học cơ bản">Perform basic arithmetic operations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">02</div>
+                    <h2 data-en="Conditional Statements" data-vi="Câu lệnh điều kiện">Conditional Statements</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Introduction to conditional structures and branching: concepts and key considerations." data-vi="Giới thiệu cấu trúc điều kiện, rẽ nhánh: khái niệm và các lưu ý.">
+                        Introduction to conditional structures and branching: concepts and key considerations.
+                    </p>
+                    <h4 data-en="Real-world Problems:" data-vi="Bài toán thực tế:">Real-world Problems:</h4>
+                    <ul>
+                        <li data-en="Check if a year is a leap year" data-vi="Kiểm tra 1 năm có phải là năm nhuận hay không">Check if a year is a leap year</li>
+                        <li data-en="Calculate monthly electricity bills based on usage" data-vi="Tính tiền điện hàng tháng theo mức sử dụng">Calculate monthly electricity bills based on usage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">03</div>
+                    <h2 data-en="Loops" data-vi="Vòng lặp">Loops</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Introduction to loop structures: concepts, types, and loop processing techniques." data-vi="Giới thiệu cấu trúc vòng lặp: khái niệm, phân loại và các kỹ thuật xử lí với vòng lặp.">
+                        Introduction to loop structures: concepts, types, and loop processing techniques.
+                    </p>
+                    <h4 data-en="Real-world Problems:" data-vi="Bài toán thực tế:">Real-world Problems:</h4>
+                    <ul>
+                        <li data-en="Calculate tiles needed to floor a room" data-vi="Tính số gạch cần để lát sàn nhà">Calculate tiles needed to floor a room</li>
+                        <li data-en="Calculate the capacity of a train" data-vi="Tính sức chứa của một chuyến tàu điện">Calculate the capacity of a train</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">04</div>
+                    <h2 data-en="Functions" data-vi="Hàm">Functions</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about subroutines: concepts, structure, and purpose. Introduction to local and global variables, and how to organize program files." data-vi="Tìm hiểu về chương trình con: Khái niệm, cấu trúc, công dụng. Giới thiệu về biến cục bộ, biến toàn cục và cách chia file chương trình.">
+                        Learn about subroutines: concepts, structure, and purpose. Introduction to local and global variables, and how to organize program files.
+                    </p>
+                    <h4 data-en="Common Functions:" data-vi="Hàm thường dùng:">Common Functions:</h4>
+                    <ul>
+                        <li data-en="Check if a number is prime" data-vi="Kiểm tra số nguyên tố">Check if a number is prime</li>
+                        <li data-en="Find the greatest common divisor (GCD) of two integers" data-vi="Tìm ước chung lớn nhất của 2 số nguyên">Find the greatest common divisor (GCD) of two integers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">05</div>
+                    <h2 data-en="Arrays" data-vi="Mảng">Arrays</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about arrays and one-dimensional arrays: concepts, element access, and processing techniques. Introduction to error checking methods and fast problem-solving approaches." data-vi="Tìm hiểu về kiểu dữ liệu mảng, mảng 1 chiều: khái niệm, cách truy xuất phần tử, các kỹ thuật xử lí. Giới thiệu phương pháp kiểm tra lỗi và tiếp cận bài toán nhanh.">
+                        Learn about arrays and one-dimensional arrays: concepts, element access, and processing techniques. Introduction to error checking methods and fast problem-solving approaches.
+                    </p>
+                    <h4 data-en="Real-world Problems:" data-vi="Bài toán thực tế:">Real-world Problems:</h4>
+                    <ul>
+                        <li data-en="Solve the fruit shopping problem in a supermarket" data-vi="Giải quyết bài toán mua hàng trái cây trong siêu thị">Solve the fruit shopping problem in a supermarket</li>
+                        <li data-en="Manage employee ID codes in a company" data-vi="Quản lí mã số của các nhân viên trong công ty">Manage employee ID codes in a company</li>
+                        <li data-en="Find which post has the most likes" data-vi="Kiểm tra bài post nào có nhiều lượt like nhất">Find which post has the most likes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">06</div>
+                    <h2 data-en="Matrix - 2D Arrays" data-vi="Ma trận - Mảng 2 chiều">Matrix - 2D Arrays</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about two-dimensional and multi-dimensional arrays: concepts, element access, and processing techniques." data-vi="Tìm hiểu về mảng 2 chiều và nhiều chiều: khái niệm, cách truy xuất phần tử mảng, các kĩ thuật xử lí.">
+                        Learn about two-dimensional and multi-dimensional arrays: concepts, element access, and processing techniques.
+                    </p>
+                    <h4 data-en="Real-world Problems:" data-vi="Bài toán thực tế:">Real-world Problems:</h4>
+                    <ul>
+                        <li data-en="Play chess" data-vi="Chơi cờ vua">Play chess</li>
+                        <li data-en="Count likes on a photo album on social media" data-vi="Đếm số lượt like của 1 album ảnh trên mạng xã hội">Count likes on a photo album on social media</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">07</div>
+                    <h2 data-en="String" data-vi="Chuỗi">String</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about strings and character types: concepts and programming techniques with strings. Introduction to ASCII table." data-vi="Tìm hiểu về chuỗi và kiểu kí tự: khái niệm, kĩ thuật lập trình với chuỗi kí tự. Giới thiệu về bảng mã ASCII.">
+                        Learn about strings and character types: concepts and programming techniques with strings. Introduction to ASCII table.
+                    </p>
+                    <h4 data-en="Practical Exercises:" data-vi="Bài tập ứng dụng:">Practical Exercises:</h4>
+                    <ul>
+                        <li data-en="Standardize names" data-vi="Chuẩn hóa tên">Standardize names</li>
+                        <li data-en="Count distinct characters" data-vi="Đếm các kí tự phân biệt">Count distinct characters</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 8 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">08</div>
+                    <h2 data-en="Recursion" data-vi="Đệ quy">Recursion</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about basic recursion techniques: concepts, types, and recursive techniques. Basic introduction to the Stack data structure." data-vi="Tìm hiểu về Kỹ thuật lập trình đệ quy cơ bản: Khái niệm và phân loại, các kỹ thuật đệ quy. Giới thiệu cơ bản về cấu trúc dữ liệu nâng cao Stack.">
+                        Learn about basic recursion techniques: concepts, types, and recursive techniques. Basic introduction to the Stack data structure.
+                    </p>
+                    <h4 data-en="Classic Problems:" data-vi="Bài toán kinh điển:">Classic Problems:</h4>
+                    <ul>
+                        <li data-en="Find Fibonacci numbers" data-vi="Tìm số Fibonnaci">Find Fibonacci numbers</li>
+                        <li data-en="Convert between binary and decimal" data-vi="Chuyển đổi giữa nhị phân và thập phân">Convert between binary and decimal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 9 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">09</div>
+                    <h2 data-en="Data Abstraction" data-vi="Trừu tượng hóa dữ liệu">Data Abstraction</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about struct/class: Apply struct/class to create new data types to avoid confusion and manage programs easily. Introduction to getters and setters for accessing and manipulating attributes." data-vi="Tìm hiểu về struct/class: Áp dụng struct/class để tạo ra kiểu dữ liệu mới giúp tránh nhầm lẫn và dễ quản lí chương trình. Giới thiệu về getters and setters.">
+                        Learn about struct/class: Apply struct/class to create new data types to avoid confusion and manage programs easily. Introduction to getters and setters for accessing and manipulating attributes.
+                    </p>
+                    <h4 data-en="Real-world Problems:" data-vi="Bài toán thực tế:">Real-world Problems:</h4>
+                    <ul>
+                        <li data-en="Search and store student/employee information" data-vi="Tìm kiếm và lưu trữ thông tin học sinh/nhân viên">Search and store student/employee information</li>
+                        <li data-en="Find the farthest point in a 2D coordinate system" data-vi="Tìm điểm xa nhất trong hệ trục tọa độ hai chiều">Find the farthest point in a 2D coordinate system</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 10 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">10</div>
+                    <h2 data-en="Sorting Algorithms" data-vi="Thuật toán sắp xếp">Sorting Algorithms</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Learn about classic sorting algorithms. Brief introduction to algorithm complexity." data-vi="Tìm hiểu về các Thuật Toán sắp xếp kinh điển. Giới thiệu sơ nét về độ phức tạp Thuật Toán.">
+                        Learn about classic sorting algorithms. Brief introduction to algorithm complexity.
+                    </p>
+                    <h4 data-en="Real-world Problems:" data-vi="Bài toán thực tế:">Real-world Problems:</h4>
+                    <ul>
+                        <li data-en="Sort student IDs and scores" data-vi="Sắp xếp mã số và điểm số của sinh viên">Sort student IDs and scores</li>
+                        <li data-en="Help Vasya build a tower" data-vi="Giúp Vasya xây dựng tháp">Help Vasya build a tower</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 11 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">11</div>
+                    <h2 data-en="Singly Linked List" data-vi="Danh sách liên kết đơn">Singly Linked List</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Introduction to linked lists, FIFO and LIFO singly linked list storage, basic operations on singly linked lists. Pointers: Additional lesson for C++ language." data-vi="Giới thiệu về danh sách liên kết, lưu trữ danh sách kết đơn FIFO và LIFO, các thao tác cơ bản. Pointer con trỏ: Bài học thêm cho ngôn ngữ C++.">
+                        Introduction to linked lists, FIFO and LIFO singly linked list storage, basic operations on singly linked lists. Pointers: Additional lesson for C++ language.
+                    </p>
+                    <h4 data-en="Problems:" data-vi="Bài toán:">Problems:</h4>
+                    <ul>
+                        <li data-en="Find available hotel rooms based on given information" data-vi="Tìm phòng trống của khách sạn dựa trên thông tin cho trước">Find available hotel rooms based on given information</li>
+                        <li data-en="Find the reversed linked list" data-vi="Tìm danh sách liên kết theo chiều ngược lại">Find the reversed linked list</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 12 -->
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-number">12</div>
+                    <h2 data-en="Trees" data-vi="Cây">Trees</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Introduction to hierarchical Tree data structure in programming: definition, types, and basic concepts. Learn about Binary Tree structure, especially Binary Search Tree: operations and traversal methods." data-vi="Giới thiệu về cấu trúc dữ liệu phân cấp cây (Tree): Định nghĩa, phân loại và các khái niệm. Tìm hiểu về Binary Tree, đặc biệt là Binary Search Tree: các thao tác và phép duyệt.">
+                        Introduction to hierarchical Tree data structure in programming: definition, types, and basic concepts. Learn about Binary Tree structure, especially Binary Search Tree: operations and traversal methods.
+                    </p>
+                    <h4 data-en="Problems:" data-vi="Bài toán:">Problems:</h4>
+                    <ul>
+                        <li data-en="Find the student with the highest score" data-vi="Tìm sinh viên với số điểm cao nhất">Find the student with the highest score</li>
+                        <li data-en="Visualize binary tree from top view" data-vi="Hình tượng hóa cây nhị phân theo hướng nhìn từ trên xuống">Visualize binary tree from top view</li>
+                        <li data-en="Level order traversal of binary tree" data-vi="Phép duyệt cây nhị phân theo cấp">Level order traversal of binary tree</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- AI Bonus -->
+            <div class="module-card special">
+                <div class="module-header">
+                    <div class="module-number">🤖</div>
+                    <h2 data-en="Bonus: AI Projects" data-vi="Thêm: Dự án AI">Bonus: AI Projects</h2>
+                </div>
+                <div class="module-content">
+                    <p data-en="Throughout the course, you'll also learn exciting AI applications including building chatbots and game-playing AI that combines everything you've learned!" data-vi="Trong suốt khóa học, bạn cũng sẽ học các ứng dụng AI thú vị bao gồm xây dựng chatbot và AI chơi game kết hợp tất cả những gì đã học!">
+                        Throughout the course, you'll also learn exciting AI applications including building chatbots and game-playing AI that combines everything you've learned!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-en="Ready to Start Your Coding Journey?" data-vi="Sẵn sàng bắt đầu hành trình lập trình?">Ready to Start Your Coding Journey?</h2>
+            <p data-en="Join us and unlock your potential in programming and AI" data-vi="Tham gia với chúng tôi và mở khóa tiềm năng của bạn trong lập trình và AI">Join us and unlock your potential in programming and AI</p>
+            <a href="contact.html" class="btn btn-primary" data-en="Contact Us Today" data-vi="Liên hệ ngay">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Code Up Your Brain" data-vi="Code Up Your Brain">Code Up Your Brain</h4>
+                    <p data-en="Empowering young minds with programming and AI skills" data-vi="Trao quyền cho trẻ em với kỹ năng lập trình và AI">Empowering young minds with programming and AI skills</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-vi="Liên kết nhanh">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-vi="Trang chủ">Home</a></li>
+                        <li><a href="course.html" data-en="Course" data-vi="Khóa học">Course</a></li>
+                        <li><a href="teacher.html" data-en="Teacher" data-vi="Giáo viên">Teacher</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-vi="Liên hệ">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-vi="Liên hệ">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📧 <a href="mailto:contact@codeupyourbrain.com">contact@codeupyourbrain.com</a></li>
+                        <li>📱 <a href="tel:+84123456789">+84 123 456 789</a></li>
+                        <li>👥 <a href="https://www.facebook.com/codeupyourbrain" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Code Up Your Brain - InnoMind Academy. <span data-en="All rights reserved." data-vi="Bản quyền thuộc về.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Code Up Your Brain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Code Up Your Brain Logo">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-vi="Trang chủ">Home</a></li>
+                    <li><a href="course.html" class="nav-link" data-en="Course Introduction" data-vi="Giới thiệu khóa học">Course Introduction</a></li>
+                    <li><a href="teacher.html" class="nav-link" data-en="Teacher" data-vi="Giáo viên">Teacher</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-en="Contact" data-vi="Liên hệ">Contact</a></li>
+                    <li>
+                        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                            <span class="lang-icon">🌐</span>
+                            <span id="currentLang">EN</span>
+                        </button>
+                    </li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Get In Touch" data-vi="Liên hệ với chúng tôi">Get In Touch</h1>
+            <p data-en="Have questions? We'd love to hear from you!" data-vi="Có câu hỏi? Chúng tôi rất muốn nghe từ bạn!">Have questions? We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-box">
+                    <h2 data-en="Contact Information" data-vi="Thông tin liên hệ">Contact Information</h2>
+                    <p data-en="Reach out to us through any of the following channels" data-vi="Liên hệ với chúng tôi qua bất kỳ kênh nào sau đây">Reach out to us through any of the following channels</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3 data-en="Email" data-vi="Email">Email</h3>
+                                <a href="mailto:contact@codeupyourbrain.com">contact@codeupyourbrain.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3 data-en="Phone" data-vi="Điện thoại">Phone</h3>
+                                <a href="tel:+84123456789">+84 123 456 789</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">👥</div>
+                            <div class="contact-details">
+                                <h3 data-en="Facebook" data-vi="Facebook">Facebook</h3>
+                                <a href="https://www.facebook.com/codeupyourbrain" target="_blank">@codeupyourbrain</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">🏢</div>
+                            <div class="contact-details">
+                                <h3 data-en="InnoMind Academy" data-vi="Học viện InnoMind">InnoMind Academy</h3>
+                                <p data-en="Da Nang, Vietnam" data-vi="Đà Nẵng, Việt Nam">Da Nang, Vietnam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="office-hours">
+                        <h3 data-en="Office Hours" data-vi="Giờ làm việc">Office Hours</h3>
+                        <p data-en="Monday - Friday: 8:00 AM - 6:00 PM" data-vi="Thứ Hai - Thứ Sáu: 8:00 SA - 6:00 CH">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p data-en="Saturday: 9:00 AM - 4:00 PM" data-vi="Thứ Bảy: 9:00 SA - 4:00 CH">Saturday: 9:00 AM - 4:00 PM</p>
+                        <p data-en="Sunday: Closed" data-vi="Chủ Nhật: Nghỉ">Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <h2 data-en="Send Us a Message" data-vi="Gửi tin nhắn cho chúng tôi">Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-en="Your Name" data-vi="Tên của bạn">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-vi="Địa chỉ Email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone Number" data-vi="Số điện thoại">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+84 123 456 789">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" data-en="Subject" data-vi="Chủ đề">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" data-en="Select a subject" data-vi="Chọn chủ đề">Select a subject</option>
+                                <option value="course" data-en="Course Inquiry" data-vi="Hỏi về khóa học">Course Inquiry</option>
+                                <option value="enrollment" data-en="Enrollment" data-vi="Đăng ký">Enrollment</option>
+                                <option value="schedule" data-en="Schedule & Pricing" data-vi="Lịch học & Giá">Schedule & Pricing</option>
+                                <option value="other" data-en="Other" data-vi="Khác">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-en="Message" data-vi="Tin nhắn">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us what you'd like to know..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-vi="Gửi tin nhắn">Send Message</button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <p data-en="Thank you for your message! We'll get back to you soon." data-vi="Cảm ơn tin nhắn của bạn! Chúng tôi sẽ phản hồi sớm.">Thank you for your message! We'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Frequently Asked Questions" data-vi="Câu hỏi thường gặp">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-en="What age is this course suitable for?" data-vi="Khóa học phù hợp với độ tuổi nào?">What age is this course suitable for?</h3>
+                    <p data-en="The course is designed for students around 12 years old and above, though motivated younger students are also welcome. We adapt the pace to each student's level." data-vi="Khóa học được thiết kế cho học sinh khoảng 12 tuổi trở lên, mặc dù học sinh nhỏ tuổi hơn có động lực cũng được chào đón. Chúng tôi điều chỉnh tốc độ theo trình độ của từng học sinh.">
+                        The course is designed for students around 12 years old and above, though motivated younger students are also welcome. We adapt the pace to each student's level.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 data-en="Do students need prior programming experience?" data-vi="Học sinh có cần kinh nghiệm lập trình trước không?">Do students need prior programming experience?</h3>
+                    <p data-en="No prior experience is needed! We start from the basics and gradually build up to more advanced topics. Enthusiasm and willingness to learn are all that's required." data-vi="Không cần kinh nghiệm trước! Chúng tôi bắt đầu từ cơ bản và dần dần xây dựng đến các chủ đề nâng cao hơn. Sự nhiệt tình và sẵn sàng học hỏi là tất cả những gì cần thiết.">
+                        No prior experience is needed! We start from the basics and gradually build up to more advanced topics. Enthusiasm and willingness to learn are all that's required.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 data-en="What equipment do students need?" data-vi="Học sinh cần thiết bị gì?">What equipment do students need?</h3>
+                    <p data-en="Students need a computer (Windows, Mac, or Linux) and a stable internet connection for online classes. All software we use is free and we'll help with installation." data-vi="Học sinh cần một máy tính (Windows, Mac hoặc Linux) và kết nối internet ổn định cho các lớp trực tuyến. Tất cả phần mềm chúng tôi sử dụng đều miễn phí và chúng tôi sẽ hỗ trợ cài đặt.">
+                        Students need a computer (Windows, Mac, or Linux) and a stable internet connection for online classes. All software we use is free and we'll help with installation.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 data-en="How long is the complete course?" data-vi="Khóa học hoàn chỉnh kéo dài bao lâu?">How long is the complete course?</h3>
+                    <p data-en="The complete course covers 12 comprehensive modules plus AI projects. Duration varies based on class schedule and student pace, typically 6-12 months for the full curriculum." data-vi="Khóa học hoàn chỉnh bao gồm 12 module toàn diện cộng với các dự án AI. Thời gian thay đổi tùy theo lịch học và tốc độ của học sinh, thường là 6-12 tháng cho toàn bộ chương trình.">
+                        The complete course covers 12 comprehensive modules plus AI projects. Duration varies based on class schedule and student pace, typically 6-12 months for the full curriculum.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 data-en="Are classes available in English and Vietnamese?" data-vi="Lớp học có sẵn bằng tiếng Anh và tiếng Việt không?">Are classes available in English and Vietnamese?</h3>
+                    <p data-en="Yes! All course materials are bilingual, and we can conduct classes in either English or Vietnamese based on student preference and comfort level." data-vi="Có! Tất cả tài liệu khóa học đều song ngữ, và chúng tôi có thể tiến hành lớp học bằng tiếng Anh hoặc tiếng Việt dựa trên sở thích và mức độ thoải mái của học sinh.">
+                        Yes! All course materials are bilingual, and we can conduct classes in either English or Vietnamese based on student preference and comfort level.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 data-en="What makes this course different?" data-vi="Điều gì làm cho khóa học này khác biệt?">What makes this course different?</h3>
+                    <p data-en="We combine real-world industry experience with age-appropriate teaching methods. Students learn through practical projects, including exciting AI applications, while building strong fundamentals in programming and algorithms." data-vi="Chúng tôi kết hợp kinh nghiệm thực tế trong ngành với phương pháp giảng dạy phù hợp lứa tuổi. Học sinh học thông qua các dự án thực tế, bao gồm các ứng dụng AI thú vị, trong khi xây dựng nền tảng vững chắc về lập trình và thuật toán.">
+                        We combine real-world industry experience with age-appropriate teaching methods. Students learn through practical projects, including exciting AI applications, while building strong fundamentals in programming and algorithms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-en="Ready to Begin?" data-vi="Sẵn sàng bắt đầu?">Ready to Begin?</h2>
+            <p data-en="Start your journey in programming and unlock endless possibilities" data-vi="Bắt đầu hành trình lập trình của bạn và mở khóa vô số khả năng">Start your journey in programming and unlock endless possibilities</p>
+            <div class="cta-buttons">
+                <a href="course.html" class="btn btn-primary" data-en="View Course Details" data-vi="Xem chi tiết khóa học">View Course Details</a>
+                <a href="mailto:contact@codeupyourbrain.com" class="btn btn-secondary" data-en="Email Us" data-vi="Gửi Email">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Code Up Your Brain" data-vi="Code Up Your Brain">Code Up Your Brain</h4>
+                    <p data-en="Empowering young minds with programming and AI skills" data-vi="Trao quyền cho trẻ em với kỹ năng lập trình và AI">Empowering young minds with programming and AI skills</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-vi="Liên kết nhanh">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-vi="Trang chủ">Home</a></li>
+                        <li><a href="course.html" data-en="Course" data-vi="Khóa học">Course</a></li>
+                        <li><a href="teacher.html" data-en="Teacher" data-vi="Giáo viên">Teacher</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-vi="Liên hệ">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-vi="Liên hệ">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📧 <a href="mailto:contact@codeupyourbrain.com">contact@codeupyourbrain.com</a></li>
+                        <li>📱 <a href="tel:+84123456789">+84 123 456 789</a></li>
+                        <li>👥 <a href="https://www.facebook.com/codeupyourbrain" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Code Up Your Brain - InnoMind Academy. <span data-en="All rights reserved." data-vi="Bản quyền thuộc về.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
