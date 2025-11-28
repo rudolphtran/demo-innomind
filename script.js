@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Initialize Contact Modal
+    initContactModal();
+    
     // Contact Form Handler
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -187,6 +190,12 @@ document.addEventListener('keydown', function(e) {
         if (navMenu && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
         }
+        
+        // ESC key to close contact modal
+        const modal = document.getElementById('contactModal');
+        if (modal && modal.classList.contains('active')) {
+            closeContactModal();
+        }
     }
 });
 
@@ -300,6 +309,112 @@ document.addEventListener('click', function(e) {
         });
     }
 });
+
+// Contact Modal Functions
+function initContactModal() {
+    // Create modal if it doesn't exist
+    if (!document.getElementById('contactModal')) {
+        createContactModal();
+    }
+    
+    // Add event listeners to all contact links
+    const contactLinks = document.querySelectorAll('a[href="contact.html"]');
+    contactLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            openContactModal();
+        });
+    });
+}
+
+function createContactModal() {
+    const modal = document.createElement('div');
+    modal.id = 'contactModal';
+    modal.className = 'contact-modal';
+    
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-en="Contact Us" data-vi="Liên hệ với chúng tôi">Contact Us</h2>
+                <button class="modal-close" onclick="closeContactModal()" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p data-en="Get in touch with us through any of these channels:" data-vi="Liên hệ với chúng tôi qua các kênh sau:">Get in touch with us through any of these channels:</p>
+                
+                <div class="modal-contact-methods">
+                    <a href="mailto:contact@codeupyourbrain.com" class="modal-contact-item">
+                        <div class="modal-contact-icon">📧</div>
+                        <div class="modal-contact-details">
+                            <h3 data-en="Email" data-vi="Email">Email</h3>
+                            <p>contact@codeupyourbrain.com</p>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+84123456789" class="modal-contact-item">
+                        <div class="modal-contact-icon">📱</div>
+                        <div class="modal-contact-details">
+                            <h3 data-en="Phone" data-vi="Điện thoại">Phone</h3>
+                            <p>+84 123 456 789</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/codeupyourbrain" target="_blank" class="modal-contact-item">
+                        <div class="modal-contact-icon">👥</div>
+                        <div class="modal-contact-details">
+                            <h3 data-en="Facebook" data-vi="Facebook">Facebook</h3>
+                            <p>@codeupyourbrain</p>
+                        </div>
+                    </a>
+                    
+                    <div class="modal-contact-item" style="cursor: default;">
+                        <div class="modal-contact-icon">🏢</div>
+                        <div class="modal-contact-details">
+                            <h3 data-en="InnoMind Academy" data-vi="Học viện InnoMind">InnoMind Academy</h3>
+                            <p data-en="Da Nang, Vietnam" data-vi="Đà Nẵng, Việt Nam">Da Nang, Vietnam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p data-en="We look forward to hearing from you!" data-vi="Chúng tôi mong được nghe từ bạn!">We look forward to hearing from you!</p>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeContactModal();
+        }
+    });
+    
+    // Update modal text based on current language
+    setLanguage(currentLang);
+}
+
+function openContactModal() {
+    const modal = document.getElementById('contactModal');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Track event
+        trackEvent('contact_modal_opened', {});
+    }
+}
+
+function closeContactModal() {
+    const modal = document.getElementById('contactModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Make closeContactModal available globally
+window.closeContactModal = closeContactModal;
 
 // Accessibility enhancements
 // Add skip to main content link
