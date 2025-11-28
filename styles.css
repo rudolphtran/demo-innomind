@@ -66,9 +66,20 @@ header .container {
     align-items: center;
 }
 
+.logo {
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
 .logo img {
     height: 50px;
     width: auto;
+    display: block;
 }
 
 nav ul.nav-menu {
